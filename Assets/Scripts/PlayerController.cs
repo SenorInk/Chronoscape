@@ -6,8 +6,13 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
-    
-    
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 7f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;   
+
+
 
     private Animator anim;
     private SpriteRenderer sprite;
@@ -25,6 +30,7 @@ public class PlayerController : MonoBehaviour
     private enum MovementState {  idle, running, jumping}
 
 
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +42,38 @@ public class PlayerController : MonoBehaviour
         moveLeft = false;
         moveRight = false;
 
+
+
     }
+
+    public void SkillDash()
+    {
+        if (isDashing)
+        {
+            return;
+        }
+        if(canDash == true)
+        {
+        StartCoroutine(Dash());
+        }
+    }
+
+    private IEnumerator Dash()
+    {
+
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        yield return new WaitForSeconds(dashingTime);
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+
+    }
+
 
     
 
@@ -139,6 +176,13 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        
+        if (isDashing)
+        {
+            return;
+        }
+
 
         rb.velocity = new Vector2(horizontalMove, rb.velocity.y );
 
