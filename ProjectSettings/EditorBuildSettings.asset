@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: f174560972f317748b434963cd240361
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 5c14c8a0f6423144384f78f17d8a311c
   - enabled: 1
@@ -14,6 +17,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 08fc2abb0ebfdf94791b8c56bfd228e5
+  - enabled: 1
+    path: Assets/Scenes/PreColonial.unity
+    guid: 3d26b072f3a5a0b4e87cbe5907b6acb6
+  - enabled: 1
+    path: Assets/Scenes/Spanish.unity
+    guid: 137689db52490b044b0a53d5f91f9efa
+  - enabled: 1
+    path: Assets/Scenes/AmericanColonial.unity
+    guid: 260bc6f0c4682f7479e53c886717861b
+  - enabled: 1
+    path: Assets/Scenes/JapaneseOccupation.unity
+    guid: 60dadb3f4f8adbe40be458d24eff4ebd
+  - enabled: 1
+    path: Assets/Scenes/PostIndependence.unity
+    guid: d81d9a529c5abe34cb64c5e550187d0f
+  - enabled: 1
+    path: Assets/Scenes/Contemporary.unity
+    guid: 0d0a525aab23ccf48a1f83df6445128c
+  - enabled: 1
+    path: Assets/Scenes/PrologueScene.unity
+    guid: 745daeffa4083c04298f4118f03f2a96
+  - enabled: 1
+    path: Assets/Scenes/MapScene.unity
+    guid: 01d45d923871ed1409a71bc9022b8539
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 512b9da5882507541a3cfaaf6172017d, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: bb35cb8302a131a4fb9664bf92fb7edf, type: 2}

@@ -188,9 +188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 4
-  components:
-  - {fileID: 6632727546679094367}
-  - {fileID: 1414815227984416204}
 --- !u!70 &6034164075498896227
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -238,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801ad704ea8e55a4093e61538a7ed6aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallDetector: {fileID: 0}
 --- !u!1 &8889623882725150382
 GameObject:
   m_ObjectHideFlags: 0
