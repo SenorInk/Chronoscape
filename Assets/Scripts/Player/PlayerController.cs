@@ -193,5 +193,15 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(horizontalMove, rb.velocity.y );
 
     }
+
+    public void Add200Coins()
+    {
+        numberOfCoins += 200;
+        Update();  // Update UI to show the new coin count
+
+        // Save the updated number of coins to PlayerPrefs
+        PlayerPrefs.SetInt("NumberOfCoins", numberOfCoins);
+        PlayerPrefs.Save();
+    }
     
 }

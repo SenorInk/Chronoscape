@@ -134,6 +134,7 @@ MonoBehaviour:
   speed: 7
   jumpSpeed: 5
   delayBeforeDoubleJump: 0
+  coinsText: {fileID: 0}
 --- !u!114 &1414815227984416204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,8 +221,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017643912, y: 0.0041673644}
-  m_Size: {x: 0.2773385, y: 0.5818029}
+  m_Offset: {x: -0.017643912, y: -0.0010243627}
+  m_Size: {x: 0.2773385, y: 0.59218645}
   m_Direction: 0
 --- !u!114 &8302493803995635989
 MonoBehaviour:
