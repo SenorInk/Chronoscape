@@ -429,18 +429,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31825828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 85293388}
+  m_Father: {fileID: 701115247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -873, y: 423.09}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 188.92, y: -98.488}
   m_SizeDelta: {x: 134.7152, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &31825830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 54.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.0000009705641, y: 0, z: -6.0084686, w: 0}
+  m_margin: {x: -0.0000009705641, y: 0, z: -6.0084686, w: -5.786358}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -806,47 +806,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45570787}
   m_CullTransparentMesh: 1
---- !u!1 &85293387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 85293388}
-  m_Layer: 5
-  m_Name: UIButtons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &85293388
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85293387}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 147328111}
-  - {fileID: 1995820669}
-  - {fileID: 1719816489}
-  - {fileID: 31825829}
-  - {fileID: 1909613435}
-  - {fileID: 1626778344}
-  m_Father: {fileID: 701115247}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &106550740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,12 +1512,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1961853093}
-  m_Father: {fileID: 85293388}
+  m_Father: {fileID: 701115247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -1030.777, y: 432}
-  m_SizeDelta: {x: 115.8781, y: 117.8137}
+  m_AnchorMin: {x: 0, y: 0.9193334}
+  m_AnchorMax: {x: 0.02355213, y: 1}
+  m_AnchoredPosition: {x: 73, y: -64.521}
+  m_SizeDelta: {x: 60.878098, y: 30.813698}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &147328112
 MonoBehaviour:
@@ -1604,10 +1563,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519164024}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 506704409}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3093,13 +3052,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1761139678}
-  - {fileID: 2034546391}
   m_Father: {fileID: 1225944848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -588.8694, y: -436.3113}
-  m_SizeDelta: {x: 1121.6998, y: 866.8723}
+  m_AnchoredPosition: {x: -588.8694, y: -964.4098}
+  m_SizeDelta: {x: 1121.6997, y: 1923.0693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361096783
 MonoBehaviour:
@@ -3121,11 +3079,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '     The precolonial era in the Philippines represents a time of diverse
-    indigenous cultures organized into independent barangays, each led by a datu.
-    With a decentralized political structure, societies engaged in agriculture, fishing,
-    and trade. Animist beliefs and rituals, along with the Baybayin script, characterized
-    this period''s rich cultural tapestry.'
+  m_text: "      Post-independence Philippines refers to the period after the country
+    gained full sovereignty from the United States on July 4, 1946. This era is characterized
+    by the nation's efforts to shape its political, economic, and social landscape,
+    overcome the challenges of reconstruction after World War II, and establish its
+    identity as a newly independent republic.\r\n\r\n     The Philippines officially
+    became the Republic of the Philippines on July 4, 1946, with the inauguration
+    of Manuel Roxas as its first president. This marked the end of the American colonial
+    period and the beginning of a journey toward self-governance.\r\n\r\n     The
+    aftermath of World War II presented immense challenges, as the country faced
+    the task of rebuilding its economy and infrastructure. War-torn cities, including
+    the capital Manila, required extensive reconstruction efforts. The government
+    focused on rehabilitation and recovery, seeking international aid and assistance.\r\n\r\n    
+    In the post-independence period, various economic policies were implemented to
+    stimulate growth. The government promoted import-substitution industrialization,
+    which aimed to develop domestic industries to reduce dependence on foreign imports.
+    The period also saw the establishment of economic policies that encouraged agricultural
+    development.\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n     The Philippines
+    maintained close ties with the United States, which continued to play a significant
+    role in the country's foreign relations. The Mutual Defense Treaty between the
+    Philippines and the United States, signed in 1951, strengthened military cooperation
+    and security alliances.\r\n\r\n      The post-independence era was marked by
+    periods of political instability. Presidents changed hands, and the country experienced
+    periods of unrest. In 1972, President Ferdinand Marcos declared martial law,
+    claiming it was necessary to suppress communist insurgency and maintain law and
+    order. Martial law lasted until 1981 and significantly altered the political
+    landscape.\r\n\r\n      The turning point in Philippine history came in 1986
+    with the People Power Revolution. Mass demonstrations, sparked by the fraudulent
+    presidential election, led to the ousting of President Ferdinand Marcos and the
+    installation of Corazon Aquino as the new president. This peaceful revolution
+    captured the world's attention and served as a symbol of nonviolent resistance."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
   m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
@@ -3810,8 +3793,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1306618882}
   m_HandleRect: {fileID: 1306618881}
   m_Direction: 2
-  m_Value: 0.9999974
-  m_Size: 0.35996908
+  m_Value: 0.9999982
+  m_Size: 0.25791752
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4120,6 +4103,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499802704}
   m_CullTransparentMesh: 1
+--- !u!1 &506704408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506704410}
+  - component: {fileID: 506704409}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &506704409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506704408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdd35b684aea844ba42d4537ad94c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Main Menu
+--- !u!4 &506704410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506704408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 485.42368, y: 585.60345, z: 52079.023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &507473182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,7 +4257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030094, y: 230}
+  m_AnchoredPosition: {x: -0.000030094, y: 636}
   m_SizeDelta: {x: 876.9206, y: 516.621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515540847
@@ -4252,7 +4280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c1d46b156f7aa64092d30049f5cc280, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff4a57a6084e1f040804f53cbd5bc78b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4351,7 +4379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000002861, y: -0.0000085831}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 62.0451, y: 59.3467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535359440
@@ -4664,150 +4692,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560875991}
-  m_CullTransparentMesh: 1
---- !u!1 &575232180
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 575232181}
-  - component: {fileID: 575232183}
-  - component: {fileID: 575232182}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &575232181
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575232180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1794856078}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000046557, y: -383.37393}
-  m_SizeDelta: {x: 1076, y: 595.0522}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &575232182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575232180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "      The precolonial era in the Philippines, which spans thousands of
-    years before the arrival of Spanish colonizers in the 16th century, is a fascinating
-    chapter in the country's history. During this time, the archipelago was home
-    to a myriad of indigenous communities, each with its distinct language, customs,
-    and traditions.\r\n\r\n       The social organization of these communities was
-    centered around barangays, which were independent and self-sufficient village
-    units led by a datu, a local chief or leader. The datu played a crucial role
-    in maintaining order, resolving disputes, and overseeing the well-being of the
-    community. Despite the autonomy of each barangay, there were often alliances
-    and trade networks established among them, contributing to a complex web of relationships
-    across the archipelago."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278257946
-  m_fontColor: {r: 0.103773594, g: 0.0344365, b: 0.0034264885, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &575232183
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575232180}
   m_CullTransparentMesh: 1
 --- !u!1 &578092360
 GameObject:
@@ -5754,7 +5638,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 144736235}
-  - {fileID: 85293388}
+  - {fileID: 147328111}
+  - {fileID: 1995820669}
+  - {fileID: 1719816489}
+  - {fileID: 31825829}
+  - {fileID: 1909613435}
+  - {fileID: 1626778344}
   - {fileID: 1487464699}
   - {fileID: 2025450510}
   - {fileID: 2071154690}
@@ -6566,13 +6455,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 935899405}
-  - {fileID: 1404185285}
   m_Father: {fileID: 1208078274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -588.8694, y: -436.3113}
-  m_SizeDelta: {x: 1121.6998, y: 866.8723}
+  m_AnchoredPosition: {x: -588.8694, y: -682.27734}
+  m_SizeDelta: {x: 1121.6997, y: 1358.8042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762051955
 MonoBehaviour:
@@ -6594,11 +6482,53 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '     The precolonial era in the Philippines represents a time of diverse
-    indigenous cultures organized into independent barangays, each led by a datu.
-    With a decentralized political structure, societies engaged in agriculture, fishing,
-    and trade. Animist beliefs and rituals, along with the Baybayin script, characterized
-    this period''s rich cultural tapestry.'
+  m_text: '       The Spanish colonial period in the Philippines, spanning over three
+    centuries, stands as a pivotal chapter in the nation''s history, leaving an enduring
+    impact on its culture, society, and identity. Beginning with the arrival of Ferdinand
+    Magellan in 1521, the archipelago witnessed a profound transformation under Spanish
+    rule. This era, marked by political, cultural, and economic changes, laid the
+    groundwork for the complex tapestry of influences that define modern-day Filipino
+    society. As we delve into the Spanish period, we unravel the intricate dynamics
+    of colonial administration, the convergence of diverse cultures, the imposition
+    of new religious beliefs, economic shifts, social stratification, and the resistance
+    movements that shaped the narrative of the Philippines under Spanish influence.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Under
+    Spanish rule, the Philippines were organized into a centralized administrative
+    system with Manila as the capital. The archipelago was governed by a series of
+    Spanish officials, including the Governor-General who represented the Spanish
+    Crown. The local political structure underwent changes, with the datu system
+    gradually giving way to a Spanish-style hierarchy.
+
+
+    One of the most profound
+    changes during this period was the introduction of Christianity. Spanish missionaries,
+    most notably the Augustinians, Franciscans, and Jesuits, played a crucial role
+    in spreading Catholicism. Churches and religious institutions were established
+    across the islands, leaving a lasting impact on Filipino spirituality.
+
+
+    The
+    Spanish introduced new crops, such as tobacco and coffee, and implemented a system
+    of forced labor called "polos y servicios," where indigenous people were required
+    to work for a certain period. The Galleon Trade, a maritime route between Manila
+    and Acapulco, became a significant economic lifeline for both the Philippines
+    and the Spanish Empire.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
   m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
@@ -7893,8 +7823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030094, y: 230}
-  m_SizeDelta: {x: 876.9206, y: 516.621}
+  m_AnchoredPosition: {x: 0.000055313, y: 156}
+  m_SizeDelta: {x: 814.0274, y: 482.7554}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935899406
 MonoBehaviour:
@@ -7916,7 +7846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c1d46b156f7aa64092d30049f5cc280, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 051f7605b63f5a34ea837883ea62ae1f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8468,8 +8398,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1729787395}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.64002925}
-  m_AnchorMax: {x: 1, y: 0.99999833}
+  m_AnchorMin: {x: 0, y: 0.7974542}
+  m_AnchorMax: {x: 1, y: 0.999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8542,13 +8472,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 515540846}
-  - {fileID: 1068402459}
   m_Father: {fileID: 1948601789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -588.8694, y: -436.3113}
-  m_SizeDelta: {x: 1121.6998, y: 866.8723}
+  m_AnchoredPosition: {x: -588.8694, y: -889.29236}
+  m_SizeDelta: {x: 1121.6997, y: 1772.8345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996558342
 MonoBehaviour:
@@ -8570,11 +8499,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '     The precolonial era in the Philippines represents a time of diverse
-    indigenous cultures organized into independent barangays, each led by a datu.
-    With a decentralized political structure, societies engaged in agriculture, fishing,
-    and trade. Animist beliefs and rituals, along with the Baybayin script, characterized
-    this period''s rich cultural tapestry.'
+  m_text: "        Filipino popular culture continued to thrive, with music, film,
+    and television playing significant roles. OPM (Original Pilipino Music) artists
+    continued to produce diverse genres, reflecting the country's linguistic and
+    cultural diversity. Filipino films gained international recognition, and the
+    local television industry produced a wide range of content.\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n      
+    The rise of social media platforms had a profound impact on Filipino society,
+    especially among the younger generation. Social media became a powerful tool
+    for activism, cultural expression, and connecting with global trends. It also
+    influenced fashion, language, and lifestyle choices, contributing to the evolution
+    of youth culture.\r\n\r\n       While English remained an official language and
+    a crucial medium of instruction, efforts were made to promote and preserve Filipino
+    languages. Local languages and dialects continued to be spoken in various regions,
+    contributing to the country's linguistic diversity. The education system underwent
+    changes, addressing the need for modernization and relevance to the evolving
+    global landscape.\r\n\r\n       The Philippines remained predominantly Roman
+    Catholic, and religious practices continued to be a significant aspect of Filipino
+    life. Traditional religious festivals, processions, and devotions played a central
+    role in communities across the archipelago.\r\n\r\n       Filipino cuisine gained
+    international recognition, with its unique blend of flavors and influences. Local
+    chefs and food enthusiasts explored traditional and modern culinary techniques,
+    showcasing the diversity of Filipino dishes. Street food, traditional recipes,
+    and innovative fusions contributed to the vibrancy of the culinary scene.\r\n\n      
+    Filipino artists and writers continued to explore themes that reflected the nation's
+    history, identity, and contemporary issues. Visual arts, literature, and performance
+    arts provided platforms for expressing cultural narratives, fostering creativity,
+    and addressing societal concerns.\r \n\n     Globalization and modernization
+    posed challenges to the preservation of traditional cultures. Efforts were made
+    to balance the embrace of modernity with the need to safeguard indigenous practices
+    and rituals. Cultural heritage conservation projects aimed to protect historical
+    sites, artifacts, and traditions from the impact of development."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
   m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
@@ -8995,150 +8949,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1068402458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1068402459}
-  - component: {fileID: 1068402461}
-  - component: {fileID: 1068402460}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1068402459
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068402458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996558341}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000046557, y: -383.37393}
-  m_SizeDelta: {x: 1076, y: 595.0522}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1068402460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068402458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "      The precolonial era in the Philippines, which spans thousands of
-    years before the arrival of Spanish colonizers in the 16th century, is a fascinating
-    chapter in the country's history. During this time, the archipelago was home
-    to a myriad of indigenous communities, each with its distinct language, customs,
-    and traditions.\r\n\r\n       The social organization of these communities was
-    centered around barangays, which were independent and self-sufficient village
-    units led by a datu, a local chief or leader. The datu played a crucial role
-    in maintaining order, resolving disputes, and overseeing the well-being of the
-    community. Despite the autonomy of each barangay, there were often alliances
-    and trade networks established among them, contributing to a complex web of relationships
-    across the archipelago."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278257946
-  m_fontColor: {r: 0.103773594, g: 0.0344365, b: 0.0034264885, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1068402461
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068402458}
-  m_CullTransparentMesh: 1
 --- !u!1 &1077496688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9522,7 +9332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030094, y: 230}
+  m_AnchoredPosition: {x: -0.000030094, y: 87}
   m_SizeDelta: {x: 876.9206, y: 516.621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1108683637
@@ -9545,7 +9355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c1d46b156f7aa64092d30049f5cc280, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81f56beade59e514a84469c6f5bf0327, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10058,8 +9868,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2014685336}
   m_HandleRect: {fileID: 2014685335}
   m_Direction: 2
-  m_Value: 0.9999974
-  m_Size: 0.35996908
+  m_Value: 0.9999982
+  m_Size: 0.26429418
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10430,8 +10240,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 993301942}
   m_HandleRect: {fileID: 993301941}
   m_Direction: 2
-  m_Value: 0.9999974
-  m_Size: 0.35996908
+  m_Value: 0.99999875
+  m_Size: 0.20254485
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10895,7 +10705,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 629477873}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.64002925}
+  m_AnchorMin: {x: 0, y: 0.74208117}
   m_AnchorMax: {x: 1, y: 0.99999833}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -11514,150 +11324,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343994552}
   m_CullTransparentMesh: 1
---- !u!1 &1362197614
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1362197615}
-  - component: {fileID: 1362197617}
-  - component: {fileID: 1362197616}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1362197615
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362197614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1881403027}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000046557, y: -383.37393}
-  m_SizeDelta: {x: 1076, y: 595.0522}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1362197616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362197614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "      The precolonial era in the Philippines, which spans thousands of
-    years before the arrival of Spanish colonizers in the 16th century, is a fascinating
-    chapter in the country's history. During this time, the archipelago was home
-    to a myriad of indigenous communities, each with its distinct language, customs,
-    and traditions.\r\n\r\n       The social organization of these communities was
-    centered around barangays, which were independent and self-sufficient village
-    units led by a datu, a local chief or leader. The datu played a crucial role
-    in maintaining order, resolving disputes, and overseeing the well-being of the
-    community. Despite the autonomy of each barangay, there were often alliances
-    and trade networks established among them, contributing to a complex web of relationships
-    across the archipelago."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278257946
-  m_fontColor: {r: 0.103773594, g: 0.0344365, b: 0.0034264885, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1362197617
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362197614}
-  m_CullTransparentMesh: 1
 --- !u!1 &1372314212
 GameObject:
   m_ObjectHideFlags: 0
@@ -11824,7 +11490,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 137860692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.64002925}
+  m_AnchorMin: {x: 0, y: 0.7607808}
   m_AnchorMax: {x: 1, y: 0.99999833}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -11979,150 +11645,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1404185284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1404185285}
-  - component: {fileID: 1404185287}
-  - component: {fileID: 1404185286}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1404185285
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404185284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 762051954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000046557, y: -383.37393}
-  m_SizeDelta: {x: 1076, y: 595.0522}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1404185286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404185284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "      The precolonial era in the Philippines, which spans thousands of
-    years before the arrival of Spanish colonizers in the 16th century, is a fascinating
-    chapter in the country's history. During this time, the archipelago was home
-    to a myriad of indigenous communities, each with its distinct language, customs,
-    and traditions.\r\n\r\n       The social organization of these communities was
-    centered around barangays, which were independent and self-sufficient village
-    units led by a datu, a local chief or leader. The datu played a crucial role
-    in maintaining order, resolving disputes, and overseeing the well-being of the
-    community. Despite the autonomy of each barangay, there were often alliances
-    and trade networks established among them, contributing to a complex web of relationships
-    across the archipelago."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278257946
-  m_fontColor: {r: 0.103773594, g: 0.0344365, b: 0.0034264885, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1404185287
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404185284}
-  m_CullTransparentMesh: 1
 --- !u!1 &1424402241
 GameObject:
   m_ObjectHideFlags: 0
@@ -12876,7 +12398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030094, y: 230}
+  m_AnchoredPosition: {x: -0.000030094, y: 171}
   m_SizeDelta: {x: 876.9206, y: 516.621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525445360
@@ -12899,7 +12421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c1d46b156f7aa64092d30049f5cc280, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0920c9f2e1f9f794ebf8b7135bc1c661, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13518,13 +13040,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 535359439}
-  m_Father: {fileID: 85293388}
+  m_Father: {fileID: 701115247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 567, y: 422.95}
-  m_SizeDelta: {x: 115.83, y: 118.11}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -508, y: -62.18994}
+  m_SizeDelta: {x: 115.829956, y: 118.109985}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1626778345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13925,8 +13447,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1379877496}
   m_HandleRect: {fileID: 1379877495}
   m_Direction: 2
-  m_Value: 0.9999974
-  m_Size: 0.35996908
+  m_Value: 0.9999984
+  m_Size: 0.23921794
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14342,13 +13864,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 38800507}
-  m_Father: {fileID: 85293388}
+  m_Father: {fileID: 701115247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -820.48987, y: -420}
-  m_SizeDelta: {x: 322.2369, y: 117.81}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 73, y: 62.18994}
+  m_SizeDelta: {x: 322.2369, y: 117.81006}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1719816490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14981,8 +14503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030094, y: 230}
-  m_SizeDelta: {x: 876.9206, y: 516.621}
+  m_AnchoredPosition: {x: -0.000055313, y: -79}
+  m_SizeDelta: {x: 974.812, y: 588.7516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761139679
 MonoBehaviour:
@@ -15004,7 +14526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c1d46b156f7aa64092d30049f5cc280, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4449505db95732a49a84a76dd9c3566d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15442,13 +14964,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1525445359}
-  - {fileID: 575232181}
   m_Father: {fileID: 474447021}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -588.8694, y: -436.3113}
-  m_SizeDelta: {x: 1121.6998, y: 866.8723}
+  m_AnchoredPosition: {x: -588.8694, y: -705.1571}
+  m_SizeDelta: {x: 1121.6997, y: 1404.564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794856079
 MonoBehaviour:
@@ -15470,11 +14991,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '     The precolonial era in the Philippines represents a time of diverse
-    indigenous cultures organized into independent barangays, each led by a datu.
-    With a decentralized political structure, societies engaged in agriculture, fishing,
-    and trade. Animist beliefs and rituals, along with the Baybayin script, characterized
-    this period''s rich cultural tapestry.'
+  m_text: "      The American colonial period in the Philippines, which followed
+    the defeat of Spanish forces in the Spanish-American War and the signing of the
+    Treaty of Paris in 1898, ushered in a new chapter in the nation's history. Lasting
+    until the end of World War II in 1946, the American period brought profound changes
+    to the political, economic, and social landscape of the Philippines.\r\n\r\n     
+    Under American rule, the Philippines transitioned from Spanish colonial governance
+    to American military control. The United States, viewing the Philippines as a
+    strategic foothold in Asia, initially governed the archipelago through military
+    commanders. Eventually, a civilian government was established, headed by the
+    Governor-General.\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      One of the significant
+    contributions of the American colonial administration was the emphasis on education
+    and infrastructure. Public education was introduced, and English became the medium
+    of instruction. The establishment of schools and the improvement of transportation
+    and communication networks laid the groundwork for modernization.\r\n\r\n      
+    The American period saw the implementation of policies that aimed to modernize
+    the Philippine economy. The introduction of a free-market system, the construction
+    of roads and bridges, and the expansion of cash-crop agriculture transformed
+    the economic landscape. However, this period also witnessed the concentration
+    of landownership in the hands of a few wealthy families.\r\n\r\n       American
+    influence left an indelible mark on Filipino culture. English became the lingua
+    franca of education, governance, and business. Western-style governance and legal
+    systems were introduced, and American pop culture began to permeate Filipino
+    society. This period also saw the emergence of a nascent Filipino nationalism
+    and the quest for independence."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
   m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
@@ -16440,13 +15980,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1108683636}
-  - {fileID: 1362197615}
   m_Father: {fileID: 1670544022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -588.8694, y: -436.3113}
-  m_SizeDelta: {x: 1121.6998, y: 866.8723}
+  m_AnchoredPosition: {x: -588.8694, y: -779.286}
+  m_SizeDelta: {x: 1121.6998, y: 1552.8218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881403028
 MonoBehaviour:
@@ -16468,11 +16007,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '     The precolonial era in the Philippines represents a time of diverse
-    indigenous cultures organized into independent barangays, each led by a datu.
-    With a decentralized political structure, societies engaged in agriculture, fishing,
-    and trade. Animist beliefs and rituals, along with the Baybayin script, characterized
-    this period''s rich cultural tapestry.'
+  m_text: "     The Japanese occupation of the Philippines during World War II, from
+    1942 to 1945, represents a tumultuous and challenging period in the nation's
+    history. This era was marked by the harsh realities of war, economic struggles,
+    and the Filipinos' resilience against foreign oppression.\r\n\r\n      In 1941,
+    the Philippines became a battleground in the Pacific theater of World War II.
+    Japanese forces swiftly overran the archipelago, leading to the fall of the Commonwealth
+    government and the beginning of a brutal occupation. The occupation was marked
+    by strict control, censorship, and the imposition of Japanese culture.\r\n\r\n     
+    The Japanese occupation brought economic hardships to the Philippines. The Japanese
+    exploited the country's resources for their war effort, leading to widespread
+    poverty and famine. The pre-war economic gains were reversed, and Filipinos faced
+    scarcity of basic necessities.\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      Despite
+    the challenges, Filipinos mounted various forms of resistance against Japanese
+    rule. Guerrilla warfare, spearheaded by groups like the Hukbalahap, intensified
+    in the rural areas. Civilian populations also engaged in acts of resistance,
+    ranging from sabotage to the dissemination of anti-Japanese propaganda.\r\n\n     
+    The Japanese sought to assimilate Filipinos into their vision of a Greater East
+    Asia Co-Prosperity Sphere. This involved the propagation of Japanese language
+    and culture, and efforts to erase elements of Filipino identity. However, these
+    attempts were met with resistance, as Filipinos held on to their language, traditions,
+    and cultural practices.\r\n\r\n      In 1945, as the tide of the war turned against
+    Japan, the Battle of Manila ensued. The city suffered extensive damage as American
+    and Filipino forces sought to liberate it from Japanese control. The battle resulted
+    in the loss of numerous lives and the destruction of significant cultural heritage."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
   m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
@@ -16575,18 +16133,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909613434}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 85293388}
+  m_Father: {fileID: 701115247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 453, y: 422.95}
-  m_SizeDelta: {x: 83.1522, y: 77.4648}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -642, y: -84.755}
+  m_SizeDelta: {x: 83.15222, y: 77.46478}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1909613436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17145,8 +16703,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1974729498}
   m_HandleRect: {fileID: 1974729497}
   m_Direction: 2
-  m_Value: 0.9999974
-  m_Size: 0.35996908
+  m_Value: 0.99999857
+  m_Size: 0.21598011
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17371,8 +16929,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1055798500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.64002925}
-  m_AnchorMax: {x: 1, y: 0.99999833}
+  m_AnchorMin: {x: 0, y: 0.7840188}
+  m_AnchorMax: {x: 1, y: 0.99999905}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17449,7 +17007,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.503, y: 0}
   m_AnchorMax: {x: 0.503, y: 1}
-  m_AnchoredPosition: {x: -0.6331, y: 0.0000019073486}
+  m_AnchoredPosition: {x: -0.63308716, y: 0.0000019073486}
   m_SizeDelta: {x: 46.2301, y: 11.9012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1979766326
@@ -17522,11 +17080,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1480364040}
-  m_Father: {fileID: 85293388}
+  m_Father: {fileID: 701115247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1039, y: 432}
+  m_AnchoredPosition: {x: -57, y: -62.18994}
   m_SizeDelta: {x: 439.4567, y: 117.81}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1995820670
@@ -17655,8 +17213,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 976443739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.64002925}
-  m_AnchorMax: {x: 1, y: 0.99999833}
+  m_AnchorMin: {x: 0, y: 0.7357045}
+  m_AnchorMax: {x: 1, y: 0.9999987}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -18040,150 +17598,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031522286}
-  m_CullTransparentMesh: 1
---- !u!1 &2034546390
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2034546391}
-  - component: {fileID: 2034546393}
-  - component: {fileID: 2034546392}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2034546391
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034546390}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 361096782}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000046557, y: -383.37393}
-  m_SizeDelta: {x: 1076, y: 595.0522}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2034546392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034546390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "      The precolonial era in the Philippines, which spans thousands of
-    years before the arrival of Spanish colonizers in the 16th century, is a fascinating
-    chapter in the country's history. During this time, the archipelago was home
-    to a myriad of indigenous communities, each with its distinct language, customs,
-    and traditions.\r\n\r\n       The social organization of these communities was
-    centered around barangays, which were independent and self-sufficient village
-    units led by a datu, a local chief or leader. The datu played a crucial role
-    in maintaining order, resolving disputes, and overseeing the well-being of the
-    community. Despite the autonomy of each barangay, there were often alliances
-    and trade networks established among them, contributing to a complex web of relationships
-    across the archipelago."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_sharedMaterial: {fileID: -4893557459558142426, guid: f506a9f699c276c45801d914ea158f78, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278257946
-  m_fontColor: {r: 0.103773594, g: 0.0344365, b: 0.0034264885, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2034546393
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034546390}
   m_CullTransparentMesh: 1
 --- !u!1 &2038997006
 GameObject:
@@ -18906,3 +18320,4 @@ SceneRoots:
   - {fileID: 701115247}
   - {fileID: 552024154}
   - {fileID: 519164025}
+  - {fileID: 506704410}
