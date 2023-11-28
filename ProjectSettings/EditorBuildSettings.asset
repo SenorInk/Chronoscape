@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
-    guid: f174560972f317748b434963cd240361
+    guid: 5bc5e0b2173ed1542bfca59310f28ca2
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 5c14c8a0f6423144384f78f17d8a311c
@@ -49,7 +49,7 @@ EditorBuildSettings:
     guid: 745daeffa4083c04298f4118f03f2a96
   - enabled: 1
     path: Assets/Scenes/MapScene.unity
-    guid: 01d45d923871ed1409a71bc9022b8539
+    guid: 6e1f6417aaa94ce4083690e54e0f9a5d
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 512b9da5882507541a3cfaaf6172017d, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: bb35cb8302a131a4fb9664bf92fb7edf, type: 2}

@@ -208,11 +208,11 @@ RectTransform:
   - {fileID: 970966381}
   m_Father: {fileID: 1189203843}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -460.3}
-  m_SizeDelta: {x: 1000, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -38, y: 91}
+  m_SizeDelta: {x: 1268.2681, y: 52.1101}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &134797696
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b30e408ecfca464293d23756bb82dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loader: {fileID: 620667361}
+  loader: {fileID: 620667365}
 --- !u!1 &361729088
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,8 +649,8 @@ GameObject:
   - component: {fileID: 620667364}
   - component: {fileID: 620667363}
   - component: {fileID: 620667362}
-  - component: {fileID: 620667361}
   - component: {fileID: 620667360}
+  - component: {fileID: 620667365}
   m_Layer: 5
   m_Name: SceneLoaderCanvas
   m_TagString: Untagged
@@ -675,20 +675,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &620667361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620667359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e20c8fbcb9e78c44965dd84a7a0739d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loaderUI: {fileID: 1189203842}
-  progressSlider: {fileID: 30576242}
 --- !u!114 &620667362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,6 +741,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &620667365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620667359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e20c8fbcb9e78c44965dd84a7a0739d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loaderUI: {fileID: 1189203842}
+  progressSlider: {fileID: 30576242}
 --- !u!1 &684167641
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,8 +901,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.36938477, y: 0}
-  m_SizeDelta: {x: -194.6997, y: -90}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189203844
 MonoBehaviour:
