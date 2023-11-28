@@ -13960,7 +13960,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506704409}
+      - m_Target: {fileID: 1488891456}
         m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
         m_MethodName: changeScene
         m_Mode: 1
