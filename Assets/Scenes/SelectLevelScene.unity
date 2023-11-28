@@ -3430,9 +3430,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2009222285}
-        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
-        m_MethodName: CloseFactPanel
+      - m_Target: {fileID: 2009222284}
+        m_TargetAssemblyTypeName: QuestionMarkScript, Assembly-CSharp
+        m_MethodName: CloseAboutPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
