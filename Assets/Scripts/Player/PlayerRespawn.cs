@@ -36,9 +36,14 @@ public class PlayerRespawn : MonoBehaviour
             collision.GetComponent<Collider2D>().enabled = false;
             collision.GetComponent<Animator>().SetTrigger("appear");
         }
+        if(collision.transform.tag == "StartingPoint")
+        {
+            currentCheckpoint = collision.transform;
+            collision.GetComponent<Collider2D>().enabled = false;
+        }
         if(collision.transform.tag == "FallDetector")
         {
-            uiManager.GameOver();
+            uiManager.StarQuiz();
             return;
         }
          

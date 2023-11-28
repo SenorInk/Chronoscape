@@ -38,7 +38,18 @@ public class Health : MonoBehaviour
             if(!dead)
             {
                 anim.SetTrigger("die");
-                GetComponent<PlayerController>().enabled = false;
+
+                //Player
+                if(GetComponent<PlayerController>() != null)
+                    GetComponent<PlayerController>().enabled = false;
+
+                //Enemy
+                if(GetComponentInParent<EnemyPatrol>() != null)
+                GetComponentInParent<EnemyPatrol>().enabled = false;
+
+                if(GetComponent<MeleeEnemy>() != null)
+                GetComponent<MeleeEnemy>().enabled = false;
+
                 dead = true;
             }
         }
@@ -47,5 +58,10 @@ public class Health : MonoBehaviour
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+
+    private void Deactivate()
+    {
+        gameObject.SetActive(false);
     }
 }

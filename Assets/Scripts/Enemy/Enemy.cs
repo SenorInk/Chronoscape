@@ -29,7 +29,13 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy Died");
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        gameObject.SetActive(false);
         
+    }
+
+    private void Deactivate()
+    {
+        gameObject.SetActive(false);
     }
 
 }
