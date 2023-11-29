@@ -7,7 +7,7 @@ public class SettingsScript1 : MonoBehaviour
     public Slider musicSlider;
     public Slider audioSlider;
     public GameObject settingsPanel;
-    public SceneLoader sceneLoader;
+    //public SceneLoader sceneLoader;
     void Start()
     {
         manager = SettingsManager.instance;
@@ -45,8 +45,8 @@ public class SettingsScript1 : MonoBehaviour
         settingsPanel.SetActive(false);
     }
 
-    public void OpenMainMenu(){
+    /*public void OpenMainMenu(){
         UpdateSettings();
         sceneLoader.LoadScene("Main Menu");
-    }
+    }*/
 }

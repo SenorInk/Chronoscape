@@ -2789,9 +2789,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2009222285}
-        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
-        m_MethodName: CloseFactPanel
+      - m_Target: {fileID: 11500000, guid: c42a92e1d92f676468ac3fcf76308810, type: 3}
+        m_TargetAssemblyTypeName: QuestionMarkScript, Assembly-CSharp
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13524,10 +13524,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2009222283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a5026514863204085073061904ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: c42a92e1d92f676468ac3fcf76308810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicSlider: {fileID: 1933242295}
+  audioSlider: {fileID: 877181459}
   settingsPanel: {fileID: 885349054}
+  sceneLoader: {fileID: 0}
 --- !u!224 &2009222286
 RectTransform:
   m_ObjectHideFlags: 0
