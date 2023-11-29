@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,10 +30,14 @@ public class PlayerController : MonoBehaviour
 
     private enum MovementState {  idle, running, jumping}
 
+    public static int numberOfCoins;
+    public TextMeshProUGUI coinsText;
 
- 
-
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        numberOfCoins = PlayerPrefs.GetInt("NumberOfCoins", 0);
+    }
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -100,6 +105,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        coinsText.text = numberOfCoins.ToString();
         MovePlayer(); 
 
     }
@@ -188,5 +194,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void Add200Coins()
+    {
+        numberOfCoins += 200;
+        Update();  // Update UI to show the new coin count
 
+        // Save the updated number of coins to PlayerPrefs
+        PlayerPrefs.SetInt("NumberOfCoins", numberOfCoins);
+        PlayerPrefs.Save();
+    }
+    
 }

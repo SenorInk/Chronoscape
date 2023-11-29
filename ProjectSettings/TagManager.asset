@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Checkpoint
   - FallDetector
+  - StartingPoint
+  - Coin
   layers:
   - Default
   - TransparentFX

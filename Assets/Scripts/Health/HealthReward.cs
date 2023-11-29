@@ -14,4 +14,20 @@ public class HealthReward : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    public void OnAnswerButtonClick()
+    {
+        // Add health when the button is clicked
+        AddHealth();
+    }
+
+    private void AddHealth()
+    {
+        // Assuming the player has a Health component
+        Health playerHealth = FindObjectOfType<Health>(); // You might need a more robust way to find the player's Health component
+        if (playerHealth != null)
+        {
+            playerHealth.AddHealth(healthValue);
+        }
+    }
 }

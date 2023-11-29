@@ -41,7 +41,19 @@ public class PlayerCombat : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            Health enemyHealth = enemy.GetComponent<Health>();
+            Enemy enemyScript = enemy.GetComponent<Enemy>();
+
+        // Check if the components exist before calling methods on them
+        if (enemyHealth != null)
+        {
+            enemyHealth.TakeDamage(attackDamage);
+        }
+
+        if (enemyScript != null)
+        {
+            enemyScript.TakeDamage(attackDamage);
+        }
         }
     }
 
