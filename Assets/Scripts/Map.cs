@@ -19,16 +19,34 @@ public class Map : MonoBehaviour
 
     // Private fields (Class specific)
     private bool audioIsEnabled = true;
+    private SettingsManager settingsManager;
 
     void Start()
     {
         // Initialize AudioSource component for sound effects
         source = GetComponent<AudioSource>();
+        settingsManager = SettingsManager.instance;
 
         // Disable audio if AudioSource component is not found
         if (source == null)
+        {
             audioIsEnabled = false;
+            return;
+        }
+
+        source.volume = settingsManager.audioLevel;
     }
+    
+    void Update(){
+        if (source == null)
+        {
+            audioIsEnabled = false;
+            return;
+        }
+
+        source.volume = settingsManager.audioLevel;
+    }
+    
 
     /// <summary>
     /// Opens the description at the specified index, activates details panel, and plays the "open" sound effect.

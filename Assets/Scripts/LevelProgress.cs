@@ -11,10 +11,10 @@ public class LevelProgress : MonoBehaviour
     {
         levelManager = LevelManager.instance;
 
-        for (int i = 0; i <= progresses.Count; i++)
+        for (int i = 0; i < progresses.Count; i++)
         {
             float progress = 0f;
-
+            progresses[i].interactable = false;
             switch(i)
             {
                 case 0:
