@@ -12,7 +12,26 @@ public class OpenPanelScript : MonoBehaviour
         if (Panel != null)
         {
             bool isActive = Panel.activeSelf;
-            Panel.SetActive(!isActive);
+            
+            if(isActive)
+            {
+                Time.timeScale = 1f;
+                Panel.SetActive(false);
+            }
+            else
+            {
+                Panel.SetActive(true);
+                Time.timeScale = 0f;
+            }
+        }
+    }
+
+    public void ClosePanel()
+    {
+        if (Panel != null && Panel.activeSelf)
+        {
+            Panel.SetActive(false);
+            Time.timeScale = 1f;
         }
     }
 }

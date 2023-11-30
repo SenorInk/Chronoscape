@@ -344,7 +344,6 @@ GameObject:
   - component: {fileID: 75778932}
   - component: {fileID: 75778931}
   - component: {fileID: 75778930}
-  - component: {fileID: 75778929}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -352,18 +351,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &75778929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75778928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 162c9eee1a579ab44b53dbd2074ccf58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &75778930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,7 +920,7 @@ GameObject:
   - component: {fileID: 393439014}
   - component: {fileID: 393439013}
   - component: {fileID: 393439012}
-  - component: {fileID: 393439011}
+  - component: {fileID: 393439015}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -961,19 +948,6 @@ RectTransform:
   m_AnchoredPosition: {x: 20, y: 128}
   m_SizeDelta: {x: 384.069, y: 80.7625}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &393439011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393439009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a5026514863204085073061904ad1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settingsPanel: {fileID: 0}
 --- !u!114 &393439012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,8 +992,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
+      - m_Target: {fileID: 393439015}
+        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -1068,6 +1042,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393439009}
   m_CullTransparentMesh: 1
+--- !u!114 &393439015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393439009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b929180e16ae7d4fa853ef7691e108a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &451269194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,7 +1760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a5026514863204085073061904ad1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsPanel: {fileID: 75778928}
 --- !u!224 &742858073
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1842,6 +1827,7 @@ GameObject:
   - component: {fileID: 831156600}
   - component: {fileID: 831156599}
   - component: {fileID: 831156598}
+  - component: {fileID: 831156601}
   m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
@@ -1912,9 +1898,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 742858072}
-        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
-        m_MethodName: CloseFactPanel
+      - m_Target: {fileID: 831156601}
+        m_TargetAssemblyTypeName: OpenPanelScript, Assembly-CSharp
+        m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1962,6 +1948,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831156596}
   m_CullTransparentMesh: 1
+--- !u!114 &831156601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831156596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62716cc6c6acec84ba72a2fb54437c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 75778928}
 --- !u!1 &851843466
 GameObject:
   m_ObjectHideFlags: 0

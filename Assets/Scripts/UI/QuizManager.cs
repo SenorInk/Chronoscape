@@ -22,6 +22,7 @@ public class QuizManager : MonoBehaviour
     
     private void Awake()
     {
+        
         uiManager = FindObjectOfType<UIManager>();
 
     }
@@ -35,7 +36,8 @@ public class QuizManager : MonoBehaviour
 
     public void GoBackGame()
     {
-        QuizManagers.SetActive(false);
+        Quizpanel.SetActive(false);
+        GoPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
@@ -55,7 +57,7 @@ public class QuizManager : MonoBehaviour
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
 
-        GameObject player = GameObject.FindGameObjectWithTag("Player"); // Assuming your player has the tag "Player"
+        GameObject player = GameObject.FindGameObjectWithTag("Player"); 
         if (player != null && startingPoint != null)
         {
             player.transform.position = startingPoint.position;
@@ -99,8 +101,8 @@ public class QuizManager : MonoBehaviour
     public void StartQuiz()
     {
         Quizpanel.SetActive(true);
-        // You can add more initialization logic here if needed
-        Time.timeScale = 0f; // Pause the game while the quiz is active
+        Time.timeScale = 0f; 
+        generateQuestion();
     }
 
 }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     
-    public Image actorImage;
+
     public Text actorname;
     public Text messageText;
     public RectTransform backgroundBox;
@@ -35,7 +35,7 @@ public class DialogueManager : MonoBehaviour
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorId];
         actorname.text = actorToDisplay.name;
-        actorImage.sprite = actorToDisplay.sprite;
+
 
         AnimateTextColor();
     }

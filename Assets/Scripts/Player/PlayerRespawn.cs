@@ -10,6 +10,8 @@ public class PlayerRespawn : MonoBehaviour
 
     public GameObject fallDetector;
 
+    private bool quizStarted = false;
+
     private void Awake()
     {
         playerHealth = GetComponent<Health>();
@@ -43,7 +45,16 @@ public class PlayerRespawn : MonoBehaviour
         }
         if(collision.transform.tag == "FallDetector")
         {
-            uiManager.StarQuiz();
+            if (!quizStarted)
+            {
+                uiManager.StarQuiz();
+                quizStarted = true;
+            }
+            else
+            {
+                
+                uiManager.GameOver();
+            }
             return;
         }
          
